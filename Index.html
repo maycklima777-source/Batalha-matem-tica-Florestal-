@@ -787,7 +787,10 @@ async function leave(){
  location.reload()
 }
 
-$("createBtn").onclick=createRoom;
+$("createBtn").onclick=()=>{
+ alert("O botão está funcionando!");
+ createRoom();
+};
 $("joinBtn").onclick=joinRoom;
 $("startBtn").onclick=startGame;
 $("nextBtn").onclick=advance;
